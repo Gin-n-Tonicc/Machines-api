@@ -16,9 +16,11 @@ import com.stripe.model.*;
 import com.stripe.net.Webhook;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
+@Component
 @RequiredArgsConstructor
 public class WebhookServiceImpl implements WebhookService {
     private final StripeConfig stripeConfig;

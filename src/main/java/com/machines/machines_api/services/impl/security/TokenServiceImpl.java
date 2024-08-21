@@ -13,6 +13,7 @@ import com.machines.machines_api.services.TokenService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,6 +24,7 @@ import java.util.List;
  */
 @RequiredArgsConstructor
 @Service
+@Component
 public class TokenServiceImpl implements TokenService {
 
     private final TokenRepository tokenRepository;

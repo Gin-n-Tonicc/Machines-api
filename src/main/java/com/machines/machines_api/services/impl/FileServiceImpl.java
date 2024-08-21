@@ -12,6 +12,7 @@ import com.machines.machines_api.exceptions.files.UnsupportedFileTypeException;
 import com.machines.machines_api.repositories.FileRepository;
 import com.machines.machines_api.services.FileService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,6 +23,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
 @RequiredArgsConstructor
+@Component
 @Service
 public class FileServiceImpl implements FileService {
 

@@ -12,6 +12,7 @@ import com.machines.machines_api.services.CityService;
 import com.machines.machines_api.services.RegionService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -20,6 +21,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
+@Component
 @RequiredArgsConstructor
 public class CityServiceImpl implements CityService {
     private final RegionService regionService;

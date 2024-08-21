@@ -15,6 +15,7 @@ import com.machines.machines_api.services.TokenService;
 import com.machines.machines_api.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -26,6 +27,7 @@ import java.util.List;
  * This services handles the post-login process, including token generation and cookie attachment.
  */
 @Service
+@Component
 @RequiredArgsConstructor
 public class OAuth2AuthenticationServiceImpl implements OAuth2AuthenticationService {
     private final List<String> SCOPES = List.of("email", "profile", "openid");

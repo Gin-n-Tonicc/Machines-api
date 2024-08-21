@@ -6,6 +6,7 @@ import com.machines.machines_api.models.entity.Product;
 import com.machines.machines_api.repositories.ProductRepository;
 import com.machines.machines_api.services.ProductService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Component
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository;
